@@ -2,9 +2,11 @@
   "name": "webdev1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "indexCounter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	// start script for Heroku
+	"start": "node indexCounter.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,11 @@
   "homepage": "https://github.com/justin-tt/webdev1#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  // Heroku Deployment
+  {
+  "engines": {
+	"node": "4.14.0"
+	}
   }
 }
