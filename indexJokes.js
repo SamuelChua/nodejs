@@ -9,6 +9,10 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/app.js', function(req, res) {
+    res.sendFile(__dirname + '/app.js');
+});
+
 app.route('/jokes').get(function(req,res,next){
 
     var randomNumber = Math.floor(Math.random()*jokes.length);
