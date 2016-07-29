@@ -12,6 +12,6 @@ var server = http.createServer(function (request, response) {
     }
 
 });
-
+app.post('/upvote', function(req,res)());
 console.log("Server running at http://127.0.0.1:8000");
 server.listen(process.env.PORT || 8080);
